@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Ganahl <span>AI</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="#inventory">Inventory</a></li>
+                        <li><a href="#adaptability">Adaptability</a></li>
+                        <li><a href="#command">Commands</a></li>
+                        <li><a href="#customer">Customer Service</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>See How Agentic AI Boosts Ganahl Lumber's Efficiency</h1>
+            <p>Proactively managing inventory, customer orders, supply chain logistics, and contractor project planning through autonomous decision-making and execution.</p>
+            <a href="#inventory" class="btn">Explore Capabilities</a>
+        </div>
+    </section>
+    
+    <section id="inventory" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Autonomous Inventory Management</h2>
+                <p>AI-powered inventory analysis and restocking that predicts shortages, prioritizes orders, and ensures optimal stock levels across all locations.</p>
+            </div>
+            
+            <div class="dashboard">
+                <div class="dashboard-header">
+                    <div class="dashboard-title">Inventory Dashboard</div>
+                    <div class="dashboard-controls">
+                        <button class="btn" id="refresh-inventory">Refresh Data</button>
+                    </div>
+                </div>
+                
+                <div class="dashboard-body">
+                    <div class="stat-card">
+                        <div class="stat-value">500</div>
+                        <div class="stat-label">2x4s in Stock</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">200</div>
+                        <div class="stat-label">Plywood Sheets</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">10,000</div>
+                        <div class="stat-label">Nails</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">5</div>
+                        <div class="stat-label">Days Until Shortage</div>
+                    </div>
+                </div>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Current Stock</th>
+                                <th>Weekly Sales</th>
+                                <th>Upcoming Orders</th>
+                                <th>Restock Priority</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2x4 Douglas Fir</td>
+                                <td>500 pieces</td>
+                                <td>100 pieces</td>
+                                <td>300 pieces (5 days)</td>
+                                <td><span class="status status-high">High</span></td>
+                            </tr>
+                            <tr>
+                                <td>1/2" Plywood Sheathing</td>
+                                <td>200 sheets</td>
+                                <td>50 sheets</td>
+                                <td>100 sheets (5 days)</td>
+                                <td><span class="status status-medium">Medium</span></td>
+                            </tr>
+                            <tr>
+                                <td>3" Common Nails</td>
+                                <td>10,000 pieces</td>
+                                <td>2,000 pieces</td>
+                                <td>1,500 pieces (5 days)</td>
+                                <td><span class="status status-low">Low</span></td>
+                            </tr>
+                            <tr>
+                                <td>Cedar Decking</td>
+                                <td>600 board feet</td>
+                                <td>75 board feet</td>
+                                <td>200 board feet (3 days)</td>
+                                <td><span class="status status-medium">Medium</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="dashboard-header" style="margin-top: 2rem;">
+                    <div class="dashboard-title">AI-Generated Purchase Order</div>
+                </div>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Supplier</th>
+                                <th>Lead Time</th>
+                                <th>Total Cost</th>
+                                <th>Reasoning</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2x4 Douglas Fir</td>
+                                <td>500 pieces</td>
+                                <td>Pacific Northwest Timber</td>
+                                <td>5 days</td>
+                                <td>$2,875.00</td>
+                                <td>Predicted shortage in 5 days, prioritized due to upcoming order</td>
+                            </tr>
+                            <tr>
+                                <td>1/2" Plywood Sheathing</td>
+                                <td>300 sheets</td>
+                                <td>Georgia Pacific</td>
+                                <td>6 days</td>
+                                <td>$9,750.00</td>
+                                <td>Stock will be below reorder point after fulfilling upcoming orders</td>
+                            </tr>
+                            <tr>
+                                <td>3" Common Nails</td>
+                                <td>5,000 pieces</td>
+                                <td>Stanley Black & Decker</td>
+                                <td>3 days</td>
+                                <td>$250.00</td>
+                                <td>Maintaining optimal stock levels</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="adaptability" class="section" style="background-color: #f0f4f8;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Real-Time Adaptability</h2>
+                <p>Watch how the AI system dynamically adjusts to sudden changes in demand, finding alternative suppliers and reprioritizing orders.</p>
+            </div>
+            
+            <div class="dashboard">
+                <div class="dashboard-header">
+                    <div class="dashboard-title">Demand Spike Scenario</div>
+                    <div class="dashboard-controls">
+                        <button class="btn" id="trigger-scenario">Trigger Demand Spike</button>
+                    </div>
+                </div>
+                
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-header">Scenario Details</div>
+                        <div class="card-body">
+                            <p><strong>Sudden Demand:</strong> 1,000 units of Cedar Decking</p>
+                            <p><strong>Required By:</strong> 7 days from today</p>
+                            <p><strong>Primary Supplier Lead Time:</strong> 7 days (Western Cedar Products)</p>
+                            <p><strong>Current Stock:</strong> 600 board feet</p>
+                            <p><strong>Challenge:</strong> Need to find faster alternative supplier</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">Before Adaptation</div>
+                        <div class="card-body">
+                            <p><strong>Order Status:</strong> Medium Priority</p>
+                            <p><strong>Supplier:</strong> Western Cedar Products</p>
+                            <p><strong>Lead Time:</strong> 7 days</p>
+                            <p><strong>Order Quantity:</strong> 400 board feet</p>
+                            <p><strong>Reasoning:</strong> Regular restocking based on current inventory levels and standard sales trends</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">After Adaptation</div>
+                        <div class="card-body">
+                            <p><strong>Order Status:</strong> <span class="status status-high">Critical Priority</span></p>
+                            <p><strong>Supplier:</strong> Premium Decking Supply</p>
+                            <p><strong>Lead Time:</strong> 3 days</p>
+                            <p><strong>Order Quantity:</strong> 1,400 board feet</p>
+                            <p><strong>Reasoning:</strong> Shifted to faster supplier to meet sudden demand spike while maintaining safety stock</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="response-area" style="margin-top: 2rem;">
+                    <div class="response-header">
+                        <div class="response-title">AI Decision Log</div>
+                    </div>
+                    <div class="response-content" id="adaptation-log">
+                        Click "Trigger Demand Spike" to see the AI's real-time adaptation process.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="command" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Interactive Command Processing</h2>
+                <p>Experience how the AI understands and executes natural language commands, providing detailed reasoning and actionable results.</p>
+            </div>
+            
+            <div class="command-input">
+                <div class="input-group">
+                    <input type="text" id="command-text" placeholder="Enter a command (e.g., 'Plan a delivery schedule for 500 board feet of cedar next week')">
+                    <button class="btn" id="submit-command">Submit</button>
+                </div>
+                
+                <div class="response-area">
+                    <div class="response-header">
+                        <div class="response-title">AI Response</div>
+                    </div>
+                    <div class="response-content" id="command-response">
+                        Enter a command above to see the AI response.
+                    </div>
+                </div>
+                
+                <div class="response-area" style="margin-top: 1.5rem;">
+                    <div class="response-header">
+                        <div class="response-title">AI Reasoning Process</div>
+                    </div>
+                    <div class="response-content" id="command-reasoning">
+                        The AI will show its reasoning process here after processing your command.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="customer" class="section" style="background-color: #f0f4f8;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Autonomous Customer Service</h2>
+                <p>See how the AI handles customer inquiries, checks inventory, confirms availability, and provides detailed delivery information.</p>
+            </div>
+            
+            <div class="example-card" id="customer-example">
+                <div class="example-question">
+                    "Do you have enough oak flooring for a 1,000-square-foot project, deliverable by Friday?"
+                </div>
+                <div class="example-answer">
+                    Click to see how the AI would respond to this inquiry.
+                </div>
+            </div>
+            
+            <div class="response-area" style="display: none;" id="customer-response-area">
+                <div class="response-header">
+                    <div class="response-title">AI Response to Customer</div>
+                </div>
+                <div class="response-content" id="customer-response">
+                    Yes, we can deliver by your requested date of Friday, March 28.
+
+                    We have 1,200 board feet of Oak Flooring in stock, which is sufficient for your 1,000 sq ft project.
+
+                    Delivery details: 2 truck(s), estimated 4 hour(s) delivery time.
+
+                    Backup: If needed, we can source an additional 500 board feet from our nearby warehouse.
+                </div>
+                
+                <div class="dashboard-header" style="margin-top: 1.5rem;">
+                    <div class="dashboard-title">Delivery Schedule Details</div>
+                </div>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Material</th>
+                                <th>Quantity</th>
+                                <th>Delivery Date</th>
+                                <th>Trucks Required</th>
+                                <th>Estimated Hours</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Oak Flooring</td>
+                                <td>1,000 board feet</td>
+                                <td>Friday, March 28, 2025</td>
+                                <td>2</td>
+                                <td>4</td>
+                                <td><span class="status status-low">Confirmed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="dashboard-header" style="margin-top: 1.5rem;">
+                    <div class="dashboard-title">AI Reasoning Process</div>
+                </div>
+                
+                <div class="response-content" id="customer-reasoning">
+                    - Received inquiry: 'Do you have enough oak flooring for a 1,000-square-foot project, deliverable by Friday?'
+                    - Analyzing inquiry for product, quantity, and delivery date requirements
+                    - Identified request for 1000 sq ft of oak flooring needed by Friday, March 28
+                    - Found matching inventory item: Oak Flooring (ID: oak-flooring) with current stock of 1200 units
+                    - Sufficient stock available: 1200 board feet (need 1000)
+                    - Calculated logistics: 2 truck(s) needed, 4 hours total delivery time
+                    - Standard delivery possible by requested date (Friday)
+                    - After fulfilling this order, 200 board feet will remain in stock
+                    - Remaining stock (200) will be below reorder point (1000). Should trigger reorder process.
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="benefits" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Business Impact</h2>
+                <p>Quantified efficiency gains and cost savings that directly impact Ganahl Lumber's bottom line.</p>
+            </div>
+            
+            <div class="benefits-container">
+                <div class="benefit-card">
+                    <div class="benefit-icon">📊</div>
+                    <div class="benefit-title">Inventory Planning Time</div>
+                    <div class="benefit-description">Reduce time spent on inventory planning through AI-powered forecasting and automated purchase order generation.</div>
+                    <div class="benefit-value">Save 5 hours weekly<br>$7,800/year</div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚫</div>
+                    <div class="benefit-title">Stockout Reduction</div>
+                    <div class="benefit-description">Prevent lost sales and customer dissatisfaction by proactively identifying and addressing potential stockouts.</div>
+                    <div class="benefit-value">~$10,000/year per branch</div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚚</div>
+                    <div class="benefit-title">Delivery Optimization</div>
+                    <div class="benefit-description">Optimize delivery routes and schedules to reduce fuel costs and improve customer satisfaction.</div>
+                    <div class="benefit-value">15% fuel savings<br>$45,000/year</div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">👤</div>
+                    <div class="benefit-title">Customer Service</div>
+                    <div class="benefit-description">Provide instant responses to customer inquiries, improving satisfaction and conversion rates.</div>
+                    <div class="benefit-value">7% satisfaction increase<br>$52,920/year per $1M revenue</div>
+                </div>
+            </div>
+            
+            <div class="dashboard" style="margin-top: 3rem;">
+                <div class="dashboard-header">
+                    <div class="dashboard-title">Total Annual Value</div>
+                </div>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Annual Value</th>
+                                <th>Key Metrics</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Inventory Management</td>
+                                <td>$69,140</td>
+                                <td>5 hours/week saved, 1.5% stockout reduction, 5% overstock reduction</td>
+                            </tr>
+                            <tr>
+                                <td>Order Processing</td>
+                                <td>$43,870</td>
+                                <td>10 min/order saved, 3.5% accuracy improvement</td>
+                            </tr>
+                            <tr>
+                                <td>Logistics Optimization</td>
+                                <td>$90,360</td>
+                                <td>15% route efficiency, 15% truck utilization improvement</td>
+                            </tr>
+                            <tr>
+                                <td>Customer Service</td>
+                                <td>$104,820</td>
+                                <td>3.8 hour response time improvement, 7% satisfaction increase</td>
+                            </tr>
+                            <tr>
+                                <td><strong>TOTAL</strong></td>
+                                <td><strong>$308,190</strong></td>
+                                <td>ROI: 500-700% over 5 years</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Ganahl Lumber</h3>
+                    <p>California's oldest lumberyard and hardware supply store, serving Southern California since 1884.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>AI Capabilities</h3>
+                    <ul>
+                        <li><a href="#inventory">Inventory Management</a></li>
+                        <li><a href="#adaptability">Real-Time Adaptability</a></li>
+                        <li><a href="#command">Command Processing</a></li>
+                        <li><a href="#customer">Customer Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Email: info@ganahllumber.com</li>
+                        <li>Phone: (714) 555-1234</li>
+                        <li>Address: 1220 E. Ball Rd., Anaheim, CA 92805</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ganahl Lumber Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

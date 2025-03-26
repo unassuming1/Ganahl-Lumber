@@ -1,0 +1,487 @@
+{
+  "inventory": {
+    "lumber": [
+      {
+        "id": "2x4-df",
+        "name": "2x4 Douglas Fir",
+        "category": "Dimensional Lumber",
+        "unit": "pieces",
+        "length": "8ft",
+        "current_stock": 500,
+        "min_stock_level": 200,
+        "reorder_point": 300,
+        "optimal_stock": 800,
+        "cost_per_unit": 5.75,
+        "retail_price": 8.99,
+        "supplier": "Pacific Northwest Timber",
+        "lead_time_days": 5,
+        "location": "Yard A"
+      },
+      {
+        "id": "4x4-pt",
+        "name": "4x4 Pressure Treated",
+        "category": "Dimensional Lumber",
+        "unit": "pieces",
+        "length": "8ft",
+        "current_stock": 150,
+        "min_stock_level": 75,
+        "reorder_point": 100,
+        "optimal_stock": 250,
+        "cost_per_unit": 12.50,
+        "retail_price": 18.99,
+        "supplier": "Southern Pine Mills",
+        "lead_time_days": 7,
+        "location": "Yard B"
+      },
+      {
+        "id": "2x6-df",
+        "name": "2x6 Douglas Fir",
+        "category": "Dimensional Lumber",
+        "unit": "pieces",
+        "length": "10ft",
+        "current_stock": 320,
+        "min_stock_level": 150,
+        "reorder_point": 200,
+        "optimal_stock": 450,
+        "cost_per_unit": 8.25,
+        "retail_price": 12.99,
+        "supplier": "Pacific Northwest Timber",
+        "lead_time_days": 5,
+        "location": "Yard A"
+      },
+      {
+        "id": "cedar-decking",
+        "name": "Cedar Decking",
+        "category": "Decking",
+        "unit": "board feet",
+        "current_stock": 600,
+        "min_stock_level": 400,
+        "reorder_point": 500,
+        "optimal_stock": 1000,
+        "cost_per_unit": 4.25,
+        "retail_price": 6.50,
+        "supplier": "Western Cedar Products",
+        "lead_time_days": 10,
+        "location": "Yard C"
+      },
+      {
+        "id": "oak-flooring",
+        "name": "Oak Flooring",
+        "category": "Flooring",
+        "unit": "board feet",
+        "current_stock": 1200,
+        "min_stock_level": 800,
+        "reorder_point": 1000,
+        "optimal_stock": 2000,
+        "cost_per_unit": 5.75,
+        "retail_price": 8.99,
+        "supplier": "Hardwood Specialists",
+        "lead_time_days": 14,
+        "location": "Warehouse 2"
+      }
+    ],
+    "sheet_goods": [
+      {
+        "id": "plywood-1/2",
+        "name": "1/2\" Plywood Sheathing",
+        "category": "Sheet Goods",
+        "unit": "sheets",
+        "dimensions": "4ft x 8ft",
+        "current_stock": 200,
+        "min_stock_level": 100,
+        "reorder_point": 150,
+        "optimal_stock": 350,
+        "cost_per_unit": 32.50,
+        "retail_price": 45.99,
+        "supplier": "Georgia Pacific",
+        "lead_time_days": 6,
+        "location": "Warehouse 1"
+      },
+      {
+        "id": "osb-7/16",
+        "name": "7/16\" OSB",
+        "category": "Sheet Goods",
+        "unit": "sheets",
+        "dimensions": "4ft x 8ft",
+        "current_stock": 175,
+        "min_stock_level": 80,
+        "reorder_point": 120,
+        "optimal_stock": 250,
+        "cost_per_unit": 24.75,
+        "retail_price": 36.99,
+        "supplier": "LP Building Products",
+        "lead_time_days": 5,
+        "location": "Warehouse 1"
+      },
+      {
+        "id": "drywall-1/2",
+        "name": "1/2\" Drywall",
+        "category": "Sheet Goods",
+        "unit": "sheets",
+        "dimensions": "4ft x 8ft",
+        "current_stock": 300,
+        "min_stock_level": 150,
+        "reorder_point": 200,
+        "optimal_stock": 450,
+        "cost_per_unit": 12.25,
+        "retail_price": 18.99,
+        "supplier": "USG Corporation",
+        "lead_time_days": 4,
+        "location": "Warehouse 3"
+      }
+    ],
+    "hardware": [
+      {
+        "id": "nails-common-3in",
+        "name": "3\" Common Nails",
+        "category": "Fasteners",
+        "unit": "pieces",
+        "current_stock": 10000,
+        "min_stock_level": 5000,
+        "reorder_point": 7000,
+        "optimal_stock": 15000,
+        "cost_per_unit": 0.05,
+        "retail_price": 0.10,
+        "supplier": "Stanley Black & Decker",
+        "lead_time_days": 3,
+        "location": "Hardware Section"
+      },
+      {
+        "id": "screws-deck-2.5in",
+        "name": "2.5\" Deck Screws",
+        "category": "Fasteners",
+        "unit": "pieces",
+        "current_stock": 8500,
+        "min_stock_level": 4000,
+        "reorder_point": 6000,
+        "optimal_stock": 12000,
+        "cost_per_unit": 0.08,
+        "retail_price": 0.15,
+        "supplier": "GRK Fasteners",
+        "lead_time_days": 4,
+        "location": "Hardware Section"
+      },
+      {
+        "id": "hinges-door",
+        "name": "Door Hinges",
+        "category": "Hardware",
+        "unit": "pairs",
+        "current_stock": 120,
+        "min_stock_level": 50,
+        "reorder_point": 75,
+        "optimal_stock": 200,
+        "cost_per_unit": 3.50,
+        "retail_price": 6.99,
+        "supplier": "National Hardware",
+        "lead_time_days": 5,
+        "location": "Hardware Section"
+      }
+    ]
+  },
+  "sales_trends": {
+    "weekly": {
+      "2x4-df": 100,
+      "4x4-pt": 30,
+      "2x6-df": 65,
+      "cedar-decking": 75,
+      "oak-flooring": 90,
+      "plywood-1/2": 50,
+      "osb-7/16": 40,
+      "drywall-1/2": 60,
+      "nails-common-3in": 2000,
+      "screws-deck-2.5in": 1500,
+      "hinges-door": 15
+    },
+    "monthly": {
+      "2x4-df": 400,
+      "4x4-pt": 120,
+      "2x6-df": 260,
+      "cedar-decking": 300,
+      "oak-flooring": 360,
+      "plywood-1/2": 200,
+      "osb-7/16": 160,
+      "drywall-1/2": 240,
+      "nails-common-3in": 8000,
+      "screws-deck-2.5in": 6000,
+      "hinges-door": 60
+    },
+    "seasonal_factors": {
+      "spring": {
+        "2x4-df": 1.2,
+        "4x4-pt": 1.3,
+        "2x6-df": 1.2,
+        "cedar-decking": 1.5,
+        "oak-flooring": 1.0,
+        "plywood-1/2": 1.2,
+        "osb-7/16": 1.2,
+        "drywall-1/2": 1.1,
+        "nails-common-3in": 1.2,
+        "screws-deck-2.5in": 1.4,
+        "hinges-door": 1.0
+      },
+      "summer": {
+        "2x4-df": 1.1,
+        "4x4-pt": 1.2,
+        "2x6-df": 1.1,
+        "cedar-decking": 1.3,
+        "oak-flooring": 0.9,
+        "plywood-1/2": 1.1,
+        "osb-7/16": 1.1,
+        "drywall-1/2": 1.0,
+        "nails-common-3in": 1.1,
+        "screws-deck-2.5in": 1.2,
+        "hinges-door": 1.0
+      },
+      "fall": {
+        "2x4-df": 0.9,
+        "4x4-pt": 0.8,
+        "2x6-df": 0.9,
+        "cedar-decking": 0.7,
+        "oak-flooring": 1.1,
+        "plywood-1/2": 0.9,
+        "osb-7/16": 0.9,
+        "drywall-1/2": 1.0,
+        "nails-common-3in": 0.9,
+        "screws-deck-2.5in": 0.8,
+        "hinges-door": 1.1
+      },
+      "winter": {
+        "2x4-df": 0.8,
+        "4x4-pt": 0.7,
+        "2x6-df": 0.8,
+        "cedar-decking": 0.5,
+        "oak-flooring": 1.0,
+        "plywood-1/2": 0.8,
+        "osb-7/16": 0.8,
+        "drywall-1/2": 0.9,
+        "nails-common-3in": 0.8,
+        "screws-deck-2.5in": 0.6,
+        "hinges-door": 0.9
+      }
+    }
+  },
+  "upcoming_orders": [
+    {
+      "order_id": "ORD-2025-1428",
+      "customer": {
+        "id": "CONT-A-12345",
+        "name": "Contractor A",
+        "type": "Professional Contractor",
+        "account_manager": "Mike Johnson"
+      },
+      "order_date": "2025-03-26",
+      "required_date": "2025-03-31",
+      "status": "Confirmed",
+      "items": [
+        {
+          "product_id": "2x4-df",
+          "quantity": 300,
+          "unit_price": 8.99
+        },
+        {
+          "product_id": "plywood-1/2",
+          "quantity": 100,
+          "unit_price": 45.99
+        },
+        {
+          "product_id": "nails-common-3in",
+          "quantity": 1500,
+          "unit_price": 0.10
+        }
+      ],
+      "delivery": {
+        "address": "123 Construction Site, Anaheim, CA",
+        "date": "2025-03-31",
+        "time_window": "7:00 AM - 10:00 AM",
+        "special_instructions": "Call 30 minutes before arrival"
+      },
+      "total_value": 7947.00
+    },
+    {
+      "order_id": "ORD-2025-1429",
+      "customer": {
+        "id": "CONT-B-67890",
+        "name": "Contractor B",
+        "type": "Professional Contractor",
+        "account_manager": "Sarah Williams"
+      },
+      "order_date": "2025-03-26",
+      "required_date": "2025-04-02",
+      "status": "Confirmed",
+      "items": [
+        {
+          "product_id": "2x6-df",
+          "quantity": 150,
+          "unit_price": 12.99
+        },
+        {
+          "product_id": "osb-7/16",
+          "quantity": 80,
+          "unit_price": 36.99
+        },
+        {
+          "product_id": "screws-deck-2.5in",
+          "quantity": 2000,
+          "unit_price": 0.15
+        }
+      ],
+      "delivery": {
+        "address": "456 Building Project, Costa Mesa, CA",
+        "date": "2025-04-02",
+        "time_window": "1:00 PM - 4:00 PM",
+        "special_instructions": "Forklift required for unloading"
+      },
+      "total_value": 4908.70
+    },
+    {
+      "order_id": "ORD-2025-1430",
+      "customer": {
+        "id": "DIY-C-54321",
+        "name": "Homeowner C",
+        "type": "DIY Customer",
+        "account_manager": null
+      },
+      "order_date": "2025-03-26",
+      "required_date": "2025-03-29",
+      "status": "Confirmed",
+      "items": [
+        {
+          "product_id": "cedar-decking",
+          "quantity": 200,
+          "unit_price": 6.50
+        },
+        {
+          "product_id": "4x4-pt",
+          "quantity": 20,
+          "unit_price": 18.99
+        },
+        {
+          "product_id": "screws-deck-2.5in",
+          "quantity": 500,
+          "unit_price": 0.15
+        }
+      ],
+      "delivery": {
+        "address": "789 Residential St, Laguna Beach, CA",
+        "date": "2025-03-29",
+        "time_window": "10:00 AM - 2:00 PM",
+        "special_instructions": "Steep driveway, small truck required"
+      },
+      "total_value": 1754.80
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "SUP-001",
+      "name": "Pacific Northwest Timber",
+      "products": ["2x4-df", "2x6-df"],
+      "lead_time_days": 5,
+      "reliability_rating": 4.8,
+      "alternative_suppliers": ["SUP-008", "SUP-003"]
+    },
+    {
+      "id": "SUP-002",
+      "name": "Southern Pine Mills",
+      "products": ["4x4-pt"],
+      "lead_time_days": 7,
+      "reliability_rating": 4.5,
+      "alternative_suppliers": ["SUP-003"]
+    },
+    {
+      "id": "SUP-003",
+      "name": "Western Lumber Distributors",
+      "products": ["2x4-df", "2x6-df", "4x4-pt"],
+      "lead_time_days": 3,
+      "reliability_rating": 4.2,
+      "alternative_suppliers": []
+    },
+    {
+      "id": "SUP-004",
+      "name": "Georgia Pacific",
+      "products": ["plywood-1/2"],
+      "lead_time_days": 6,
+      "reliability_rating": 4.7,
+      "alternative_suppliers": ["SUP-005"]
+    },
+    {
+      "id": "SUP-005",
+      "name": "LP Building Products",
+      "products": ["osb-7/16", "plywood-1/2"],
+      "lead_time_days": 5,
+      "reliability_rating": 4.6,
+      "alternative_suppliers": []
+    },
+    {
+      "id": "SUP-006",
+      "name": "USG Corporation",
+      "products": ["drywall-1/2"],
+      "lead_time_days": 4,
+      "reliability_rating": 4.9,
+      "alternative_suppliers": []
+    },
+    {
+      "id": "SUP-007",
+      "name": "Stanley Black & Decker",
+      "products": ["nails-common-3in"],
+      "lead_time_days": 3,
+      "reliability_rating": 4.8,
+      "alternative_suppliers": ["SUP-009"]
+    },
+    {
+      "id": "SUP-008",
+      "name": "Cascade Timber Products",
+      "products": ["2x4-df", "2x6-df"],
+      "lead_time_days": 4,
+      "reliability_rating": 4.4,
+      "alternative_suppliers": []
+    },
+    {
+      "id": "SUP-009",
+      "name": "GRK Fasteners",
+      "products": ["screws-deck-2.5in", "nails-common-3in"],
+      "lead_time_days": 4,
+      "reliability_rating": 4.7,
+      "alternative_suppliers": []
+    },
+    {
+      "id": "SUP-010",
+      "name": "National Hardware",
+      "products": ["hinges-door"],
+      "lead_time_days": 5,
+      "reliability_rating": 4.5,
+      "alternative_suppliers": []
+    },
+    {
+      "id": "SUP-011",
+      "name": "Western Cedar Products",
+      "products": ["cedar-decking"],
+      "lead_time_days": 10,
+      "reliability_rating": 4.6,
+      "alternative_suppliers": ["SUP-012"]
+    },
+    {
+      "id": "SUP-012",
+      "name": "Premium Decking Supply",
+      "products": ["cedar-decking"],
+      "lead_time_days": 3,
+      "reliability_rating": 4.3,
+      "alternative_suppliers": []
+    },
+    {
+      "id": "SUP-013",
+      "name": "Hardwood Specialists",
+      "products": ["oak-flooring"],
+      "lead_time_days": 14,
+      "reliability_rating": 4.9,
+      "alternative_suppliers": ["SUP-014"]
+    },
+    {
+      "id": "SUP-014",
+      "name": "Flooring Distributors Inc.",
+      "products": ["oak-flooring"],
+      "lead_time_days": 7,
+      "reliability_rating": 4.4,
+      "alternative_suppliers": []
+    }
+  ]
+}
