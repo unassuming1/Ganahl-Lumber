@@ -60,8 +60,3 @@ This project demonstrates how an advanced agentic AI can proactively manage Gana
 - Real-time data analytics and visualization
 - Machine learning for improved demand forecasting
 - Mobile application for on-the-go management
-
-## Contact
-For any questions or support regarding this demonstration, please contact:
-- Email: info@ganahllumber.com
-- Phone: (714) 555-1234
