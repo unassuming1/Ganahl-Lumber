@@ -1,0 +1,96 @@
+{
+  "SUP-001": {
+    "supplier_name": "Pacific Northwest Timber",
+    "order_date": "2025-03-26",
+    "expected_delivery": "2025-03-31",
+    "items": [
+      {
+        "product_id": "2x4-df",
+        "product_name": "2x4 Douglas Fir",
+        "quantity": 600,
+        "unit_cost": 5.75,
+        "total_cost": 3450.0,
+        "priority": "HIGH",
+        "reason": "Projected stock (200) will be below reorder point (300) after fulfilling upcoming orders"
+      },
+      {
+        "product_id": "2x6-df",
+        "product_name": "2x6 Douglas Fir",
+        "quantity": 280,
+        "unit_cost": 8.25,
+        "total_cost": 2310.0,
+        "priority": "HIGH",
+        "reason": "Projected stock (170) will be below reorder point (200) after fulfilling upcoming orders"
+      }
+    ],
+    "total_value": 5760.0
+  },
+  "SUP-011": {
+    "supplier_name": "Western Cedar Products",
+    "order_date": "2025-03-26",
+    "expected_delivery": "2025-04-05",
+    "items": [
+      {
+        "product_id": "cedar-decking",
+        "product_name": "Cedar Decking",
+        "quantity": 600,
+        "unit_cost": 4.25,
+        "total_cost": 2550.0,
+        "priority": "HIGH",
+        "reason": "Projected stock (400) will be below reorder point (500) after fulfilling upcoming orders"
+      }
+    ],
+    "total_value": 2550.0
+  },
+  "SUP-004": {
+    "supplier_name": "Georgia Pacific",
+    "order_date": "2025-03-26",
+    "expected_delivery": "2025-04-01",
+    "items": [
+      {
+        "product_id": "plywood-1/2",
+        "product_name": "1/2\" Plywood Sheathing",
+        "quantity": 250,
+        "unit_cost": 32.5,
+        "total_cost": 8125.0,
+        "priority": "HIGH",
+        "reason": "Projected stock (100) will be below reorder point (150) after fulfilling upcoming orders"
+      }
+    ],
+    "total_value": 8125.0
+  },
+  "SUP-005": {
+    "supplier_name": "LP Building Products",
+    "order_date": "2025-03-26",
+    "expected_delivery": "2025-03-31",
+    "items": [
+      {
+        "product_id": "osb-7/16",
+        "product_name": "7/16\" OSB",
+        "quantity": 155,
+        "unit_cost": 24.75,
+        "total_cost": 3836.25,
+        "priority": "HIGH",
+        "reason": "Projected stock (95) will be below reorder point (120) after fulfilling upcoming orders"
+      }
+    ],
+    "total_value": 3836.25
+  },
+  "SUP-009": {
+    "supplier_name": "GRK Fasteners",
+    "order_date": "2025-03-26",
+    "expected_delivery": "2025-03-30",
+    "items": [
+      {
+        "product_id": "screws-deck-2.5in",
+        "product_name": "2.5\" Deck Screws",
+        "quantity": 6000,
+        "unit_cost": 0.08,
+        "total_cost": 480.0,
+        "priority": "HIGH",
+        "reason": "Projected stock (6000) will be below reorder point (6000) after fulfilling upcoming orders"
+      }
+    ],
+    "total_value": 480.0
+  }
+}

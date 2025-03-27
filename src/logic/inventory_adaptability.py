@@ -4,7 +4,7 @@ import datetime
 from datetime import timedelta
 
 # Load inventory data
-with open('/home/ubuntu/ganahl-ai-project/inventory_data.json', 'r') as file:
+with open('/home/ubuntu/ganahl-lumber-project/src/data/inventory_data.json', 'r') as file:
     data = json.load(file)
 
 # Current date for the simulation
@@ -201,11 +201,11 @@ for supplier_id, po in initial_purchase_orders.items():
     print("\n" + "-"*50 + "\n")
 
 # Save initial purchase orders to file
-with open('/home/ubuntu/ganahl-ai-project/initial_purchase_orders.json', 'w') as file:
+with open('/home/ubuntu/ganahl-lumber-project/src/data/initial_purchase_orders.json', 'w') as file:
     json.dump(initial_purchase_orders, file, indent=2)
 
 # Save initial decision log to file
-with open('/home/ubuntu/ganahl-ai-project/initial_inventory_decision_log.txt', 'w') as file:
+with open('/home/ubuntu/ganahl-lumber-project/src/data/initial_inventory_decision_log.txt', 'w') as file:
     file.write("\n".join(initial_decision_log))
 
 # Simulate a demand spike for decking materials
@@ -243,11 +243,11 @@ for supplier_id, po in updated_purchase_orders.items():
     print("\n" + "-"*50 + "\n")
 
 # Save updated purchase orders to file
-with open('/home/ubuntu/ganahl-ai-project/updated_purchase_orders.json', 'w') as file:
+with open('/home/ubuntu/ganahl-lumber-project/src/data/updated_purchase_orders.json', 'w') as file:
     json.dump(updated_purchase_orders, file, indent=2)
 
 # Save updated decision log to file
-with open('/home/ubuntu/ganahl-ai-project/updated_inventory_decision_log.txt', 'w') as file:
+with open('/home/ubuntu/ganahl-lumber-project/src/data/updated_inventory_decision_log.txt', 'w') as file:
     file.write("\n".join(updated_decision_log))
 
 # Generate comparison summary
@@ -288,7 +288,7 @@ else:
     print("AFTER: No order needed for Cedar Decking despite demand spike (check inventory levels)")
 
 # Save comparison to file
-with open('/home/ubuntu/ganahl-ai-project/order_comparison.txt', 'w') as file:
+with open('/home/ubuntu/ganahl-lumber-project/src/data/order_comparison.txt', 'w') as file:
     file.write("Cedar Decking Order Comparison:\n")
     if initial_cedar_order:
         file.write(f"BEFORE: Order {initial_cedar_order['quantity']} units from {initial_supplier} ({initial_cedar_order['priority']} priority)\n")

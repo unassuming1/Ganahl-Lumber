@@ -1,10 +1,9 @@
-```python
 import json
 import datetime
 from datetime import timedelta
 
 # Load inventory data
-with open('/home/ubuntu/ganahl-ai-project/inventory_data.json', 'r') as file:
+with open('/home/ubuntu/ganahl-lumber-project/src/data/inventory_data.json', 'r') as file:
     data = json.load(file)
 
 # Current date for the simulation
@@ -131,12 +130,11 @@ for supplier_id, po in purchase_orders.items():
     print("\n" + "-"*50 + "\n")
 
 # Save purchase orders to file
-with open('/home/ubuntu/ganahl-ai-project/purchase_orders.json', 'w') as file:
+with open('/home/ubuntu/ganahl-lumber-project/src/data/purchase_orders.json', 'w') as file:
     json.dump(purchase_orders, file, indent=2)
 
 # Save decision log to file
-with open('/home/ubuntu/ganahl-ai-project/inventory_decision_log.txt', 'w') as file:
+with open('/home/ubuntu/ganahl-lumber-project/src/data/inventory_decision_log.txt', 'w') as file:
     file.write("\n".join(decision_log))
 
 print("Purchase orders and decision log have been saved to files.")
-```

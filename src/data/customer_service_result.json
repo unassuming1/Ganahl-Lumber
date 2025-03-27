@@ -1,0 +1,32 @@
+{
+  "success": true,
+  "message": "Yes, we can deliver by your requested date of Friday, March 28.\nWe have 1200 board feet of Oak Flooring in stock, which is sufficient for your 1000 sq ft project.\nDelivery details: 2 truck(s), estimated 4 hour(s) delivery time.\nBackup: If needed, we can source an additional 500 board feet from our nearby warehouse.",
+  "delivery_schedule": {
+    "material": "Oak Flooring",
+    "quantity": 1000,
+    "units": "board feet",
+    "trucks_required": 2,
+    "estimated_hours": 4,
+    "delivery_date": "2025-03-28",
+    "delivery_day": "Friday",
+    "expedited": false,
+    "status": "Confirmed"
+  },
+  "stock_information": {
+    "current_stock": 1200,
+    "required_amount": 1000,
+    "remaining_after_order": 200,
+    "backup_available": 500
+  },
+  "reasoning": [
+    "Received inquiry: 'Do you have enough oak flooring for a 1,000-square-foot project, deliverable by Friday?'",
+    "Analyzing inquiry for product, quantity, and delivery date requirements",
+    "Identified request for 1000 sq ft of oak flooring needed by Friday, March 28",
+    "Found matching inventory item: Oak Flooring (ID: oak-flooring) with current stock of 1200 units",
+    "Sufficient stock available: 1200 board feet (need 1000)",
+    "Calculated logistics: 2 truck(s) needed, 4 hours total delivery time",
+    "Standard delivery possible by requested date (Friday)",
+    "After fulfilling this order, 200 board feet will remain in stock",
+    "Remaining stock (200) will be below reorder point (1000). Should trigger reorder process."
+  ]
+}

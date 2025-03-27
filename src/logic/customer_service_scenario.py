@@ -1,10 +1,9 @@
-```python
 import json
 import datetime
 from datetime import timedelta
 
 # Load inventory data
-with open('/home/ubuntu/ganahl-ai-project/inventory_data.json', 'r') as file:
+with open('/home/ubuntu/ganahl-lumber-project/src/data/inventory_data.json', 'r') as file:
     data = json.load(file)
 
 # Current date for the simulation (Wednesday, March 26, 2025)
@@ -204,8 +203,7 @@ if "stock_information" in result:
         print(f"{key}: {value}")
 
 # Save the result to a file
-with open('/home/ubuntu/ganahl-ai-project/customer_service_result.json', 'w') as file:
+with open('/home/ubuntu/ganahl-lumber-project/src/data/customer_service_result.json', 'w') as file:
     json.dump(result, file, indent=2)
 
 print("\nCustomer service inquiry result has been saved to file.")
-```

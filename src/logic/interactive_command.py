@@ -1,11 +1,10 @@
-```python
 import json
 import datetime
 from datetime import timedelta
 import re
 
 # Load inventory data
-with open('/home/ubuntu/ganahl-ai-project/inventory_data.json', 'r') as file:
+with open('/home/ubuntu/ganahl-lumber-project/src/data/inventory_data.json', 'r') as file:
     data = json.load(file)
 
 # Current date for the simulation
@@ -157,8 +156,7 @@ if "delivery_schedule" in result:
         print(f"{key}: {value}")
 
 # Save the result to a file
-with open('/home/ubuntu/ganahl-ai-project/command_processing_result.json', 'w') as file:
+with open('/home/ubuntu/ganahl-lumber-project/src/data/command_processing_result.json', 'w') as file:
     json.dump(result, file, indent=2)
 
 print("\nCommand processing result has been saved to file.")
-```

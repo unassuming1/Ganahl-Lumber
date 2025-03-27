@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "message": "Delivery of 500 board feet of Cedar Decking scheduled for Thursday, March 27.\nLogistics: 1 truck(s), 2 hour(s) total delivery time.\nStock check: 600 units available, 100 units will remain after delivery.",
+  "delivery_schedule": {
+    "material": "Cedar Decking",
+    "quantity": 500,
+    "units": "board feet",
+    "trucks_required": 1,
+    "estimated_hours": 2,
+    "delivery_date": "2025-03-27",
+    "delivery_day": "Thursday",
+    "status": "Scheduled"
+  },
+  "reasoning": [
+    "Received command: 'Plan a delivery schedule for 500 board feet of cedar next week.'",
+    "Identified delivery scheduling request for 500 board feet of cedar",
+    "Found matching inventory item: Cedar Decking (ID: cedar-decking) with current stock of 600 units",
+    "Calculated logistics: 1 truck(s) needed, 2 hours total delivery time",
+    "Can deliver quickly within 1 days (by Thursday, March 27)"
+  ]
+}

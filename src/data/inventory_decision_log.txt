@@ -1,0 +1,11 @@
+CRITICAL: 2x4 Douglas Fir needs immediate reordering. Projected stock (200) will be below reorder point (300) after fulfilling upcoming orders
+INFO: 4x4 Pressure Treated has sufficient stock (150 units)
+CRITICAL: 2x6 Douglas Fir needs immediate reordering. Projected stock (170) will be below reorder point (200) after fulfilling upcoming orders
+CRITICAL: Cedar Decking needs immediate reordering. Projected stock (400) will be below reorder point (500) after fulfilling upcoming orders
+INFO: Oak Flooring has sufficient stock (1200 units)
+CRITICAL: 1/2" Plywood Sheathing needs immediate reordering. Projected stock (100) will be below reorder point (150) after fulfilling upcoming orders
+CRITICAL: 7/16" OSB needs immediate reordering. Projected stock (95) will be below reorder point (120) after fulfilling upcoming orders
+INFO: 1/2" Drywall has sufficient stock (300 units)
+INFO: 3" Common Nails has sufficient stock (10000 units)
+CRITICAL: 2.5" Deck Screws needs immediate reordering. Projected stock (6000) will be below reorder point (6000) after fulfilling upcoming orders
+INFO: Door Hinges has sufficient stock (120 units)
